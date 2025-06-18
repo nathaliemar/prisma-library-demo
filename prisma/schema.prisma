@@ -18,6 +18,7 @@ datasource db {
 model Book {
   id         String   @id @default(cuid())
   title      String
+  pages      Int?
   year       Int
   summary    String?
   quantity   Int      @default(0)
